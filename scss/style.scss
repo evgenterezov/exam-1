@@ -8,6 +8,7 @@
 body {
   width: 100%;
 }
+// header
 .header {
   &__top {
     background-image: url(../img/HeaderBackground.png);
@@ -67,6 +68,9 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+  &__btn:hover {
+    background: #647ff7;
+  }
 
   &__scroll {
     padding-top: 210px;
@@ -86,7 +90,6 @@ body {
     justify-content: space-between;
     color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
-    align-items: center;
     padding-top: 32px;
   }
 
@@ -105,8 +108,9 @@ body {
   }
 
   &__item {
+    border-bottom: 2px solid transparent;
     cursor: pointer;
-    transition: all 0.4s;
+    transition: all 0.5s;
   }
   &__item:hover {
     border-bottom: 2px solid #ffffff;
@@ -115,6 +119,12 @@ body {
     margin-right: 40px;
   }
 }
+.navigation {
+  position: sticky;
+  top: 0;
+}
+// and header
+// section-1
 .why {
   background-image: url(../img/WhyBackground.png);
   background-size: cover;
@@ -168,6 +178,11 @@ body {
   text-decoration: none;
   margin-bottom: 190px;
   display: inline-block;
+  transition: all 0.4s;
+}
+.button:hover {
+  background: #ffffff;
+  color: #486bfe;
 }
 .steps {
   background: #333333;
@@ -223,7 +238,6 @@ body {
     height: 344px;
     color: #ffffff;
     padding: 44px 32px;
-    opacity: 0.8;
   }
 
   &__subtitle {
